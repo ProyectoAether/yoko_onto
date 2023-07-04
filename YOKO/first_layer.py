@@ -371,9 +371,9 @@ def knit(
                 )
                 nt.from_nx(g_o)
                 st.write("##  Ontologies to use")
-                nt.save_graph(f"output/" + str(hash1) + "_ontology.html")
+                nt.save_graph(f"" + str(hash1) + "_ontology.html")
                 HtmlFile = open(
-                    f"output/" + str(hash1) + "_ontology.html", "r", encoding="utf-8"
+                    f"" + str(hash1) + "_ontology.html", "r", encoding="utf-8"
                 )
                 components.html(HtmlFile.read(), height=615, width=800)
 
@@ -1078,7 +1078,7 @@ def knit(
         IP_SERVER_NEO4J,
         USER_NEO4J,
         PASSWORD_NEO4J,
-        f"output/" + str(hash1) + "_TaxonomyOfOntology.html",
+        f"" + str(hash1) + "_TaxonomyOfOntology.html",
     )
 
     all_uri = [
@@ -1102,5 +1102,5 @@ def knit(
         IP_SERVER_NEO4J,
         USER_NEO4J,
         PASSWORD_NEO4J,
-        f"output/" + str(hash1) + "_Ontology.html",
+        f"" + str(hash1) + "_Ontology.html",
     )
