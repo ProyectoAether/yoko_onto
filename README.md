@@ -7,14 +7,13 @@ The YOKO ONtO tool provides a visualization layer on top of [KNIT](https://githu
 
 ## Getting started
 
-Once the .env file is created. Then install the python requirements:
-
 ```
 $ cd YOKO
-$ pip install -r requirements.txt
-```
-And finally, run main.py:
+$ docker build -t yoko_onto:1.0.0 . 
 
 ```
-$ streamlit run main.py --server.fileWatcherType none
+And finally, run docker container:
+
+```
+$ docker run -d -p 0.0.0.0:8501:8501 yoko_onto:1.0.0
 ```
